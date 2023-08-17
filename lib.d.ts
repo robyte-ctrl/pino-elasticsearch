@@ -24,7 +24,7 @@ export type DestinationStream = Transform & {
   on(event: 'error', handler: (error: Error) => void): void
 }
 
-export type Options = Pick<ClientOptions, 'node' | 'auth' | 'cloud' | 'caFingerprint' | 'Connection' | 'ConnectionPool'> & {
+export type Options = Pick<ClientOptions, 'node' | 'auth' | 'cloud' | 'Connection' | 'ConnectionPool'> & {
   index?: Index
 
   type?: string

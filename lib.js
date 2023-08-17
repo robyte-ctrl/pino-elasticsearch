@@ -126,10 +126,6 @@ function pinoElasticSearch (opts = {}) {
     ssl: { rejectUnauthorized: opts.rejectUnauthorized, ...opts.tls }
   }
 
-  if (opts.caFingerprint) {
-    clientOpts.caFingerprint = opts.caFingerprint
-  }
-
   if (opts.Connection) {
     clientOpts.Connection = opts.Connection
   }
